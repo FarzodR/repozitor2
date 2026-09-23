@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Забономӯзӣ | Изучение таджикского и русского языка — онлайн уроки в Zoom</title>
+    <link rel="stylesheet" href="scratch_1.css">
+</head>
+<body>
+<div class="container">
+    <!-- ХЕДЕР -->
+    <div class="header">
+        <h1>📚 Забономӯзӣ | Русский & Таджикский</h1>
+        <p>Онлайн-уроки в Zoom с профессиональным педагогом. Учите язык в удобное время!</p>
+        <div class="lang-badge">
+            <span>🇹🇯 Тоҷикӣ</span> <span>⟷</span> <span>🇷🇺 Русский</span>
+        </div>
+    </div>
+
+    <!-- АНКЕТА ПЕДАГОГА -->
+    <div class="teacher-card">
+        <div class="teacher-header">
+            <div class="avatar">👩‍🏫</div>
+            <div>
+                <h2>Фифи</h2>
+                <p>Преподаватель языков</p>
+            </div>
+        </div>
+        <div class="info-row">
+            <span class="info-label">📜 Квалификация:</span>
+            <span class="info-value">Дипломированный преподаватель, сертификат CELTA</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">⭐ Опыт:</span>
+            <span class="info-value">7 лет преподавания, 2000+ учеников</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">🌍 Языки:</span>
+            <span class="info-value">Таджикский, Русский, Английский</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">📞 Связь:</span>
+            <span class="info-value">Telegram: @nigina_teacher | nigina@lingo.tj</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">📝 О себе:</span>
+            <span class="info-value">Интерактивные уроки с живым общением, материалы под ваш уровень. Помогу заговорить быстро и без барьеров!</span>
+        </div>
+        <div class="payment-demo" style="margin-top: 1rem;">
+            💡 <strong>Стоимость урока: 50 сомони</strong>
+        </div>
+    </div>
+
+    <!-- СЛОВАРИ -->
+    <div class="grid-2">
+        <div class="card">
+            <h3>🇹🇯 Салом / Приветствия</h3>
+            <ul class="word-list">
+                <li><span class="word-tj">Салом</span><span class="word-ru">Здравствуйте</span></li>
+                <li><span class="word-tj">Шом ба хайр</span><span class="word-ru">Добрый вечер</span></li>
+                <li><span class="word-tj">Наҳорӣ хуб?</span><span class="word-ru">Как дела?</span></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>🏠 Оила / Семья</h3>
+            <ul class="word-list">
+                <li><span class="word-tj">Падар</span><span class="word-ru">Отец</span></li>
+                <li><span class="word-tj">Модар</span><span class="word-ru">Мать</span></li>
+                <li><span class="word-tj">Бародар</span><span class="word-ru">Брат</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- УРОКИ + ОПЛАТА НА КАРТУ PF -->
+    <div class="lessons-section">
+        <h2 style="margin-bottom: 1rem;">🎥 Онлайн-уроки в Zoom</h2>
+        <p style="margin-bottom: 1.5rem;">Выберите урок, оплатите на карту <strong>PF (Пайёни Файз)</strong> и получите доступ к Zoom-конференции.</p>
+
+        <!-- Урок 1 -->
+        <div class="lesson-item" id="lesson1">
+            <div class="lesson-title">
+                <span>🗣️ Разговорный клуб: «Путешествия и культура»</span>
+                <span class="lesson-time">📅 Пн, 20:00 (Душанбе)</span>
+            </div>
+            <div class="access-status">
+                <span id="status1" class="access-granted" style="color:#dc2626;">🔒 Доступ закрыт</span>
+                <div>
+                    <button onclick="openPayment(1)" class="btn-pay">💳 Оплатить 50 сомони</button>
+                    <a href="#" id="zoomLink1" class="btn-zoom locked" target="_blank">🚪 Войти в Zoom (недоступно)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Урок 2 -->
+        <div class="lesson-item" id="lesson2">
+            <div class="lesson-title">
+                <span>📖 Грамматика таджикского языка: Лёгкий старт</span>
+                <span class="lesson-time">📅 Ср, 19:00 (Душанбе)</span>
+            </div>
+            <div class="access-status">
+                <span id="status2" class="access-granted" style="color:#dc2626;">🔒 Доступ закрыт</span>
+                <div>
+                    <button onclick="openPayment(2)" class="btn-pay">💳 Оплатить 50 сомони</button>
+                    <a href="#" id="zoomLink2" class="btn-zoom locked" target="_blank">🚪 Войти в Zoom (недоступно)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Урок 3 -->
+        <div class="lesson-item" id="lesson3">
+            <div class="lesson-title">
+                <span>🎯 Русский для начинающих (билингвы)</span>
+                <span class="lesson-time">📅 Пт, 18:30 (Душанбе)</span>
+            </div>
+            <div class="access-status">
+                <span id="status3" class="access-granted" style="color:#dc2626;">🔒 Доступ закрыт</span>
+                <div>
+                    <button onclick="openPayment(3)" class="btn-pay">💳 Оплатить 50 сомони</button>
+                    <a href="#" id="zoomLink3" class="btn-zoom locked" target="_blank">🚪 Войти в Zoom (недоступно)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ИНФОРМАЦИЯ ОБ ОПЛАТЕ -->
+        <div class="payment-demo">
+            🤖 <strong>Как оплатить урок на карту PF?</strong><br>
+            1. Нажмите кнопку «Оплатить 50 сомони»<br>
+            2. Введите номер карты PF для перевода<br>
+            3. После оплаты нажмите «Я оплатил(а)»<br>
+            4. Ссылка на Zoom-урок станет активной<br><br>
+            <span style="background:#e6f7e6; padding:2px 8px; border-radius:20px;">⭐ Карта PF: 1234 5678 9012 3456 (пример)</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        🌟 Онлайн-школа «Забономӯзӣ» — Уроки таджикского и русского • Zoom • Оплата на карту PF
+    </div>
+</div>
+
+<!-- МОДАЛЬНОЕ ОКНО ОПЛАТЫ -->
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>💳 Оплата урока</h2>
+            <span class="close-btn" onclick="closePayment()">&times;</span>
+        </div>
+
+        <div class="payment-info">
+            <p><strong>📚 Урок:</strong> <span id="lessonName">Загрузка...</span></p>
+            <p><strong>💰 Сумма:</strong> 50 сомони</p>
+            <hr style="margin: 1rem 0;">
+            <p><strong>💳 Реквизиты для оплаты (PF):</strong></p>
+            <div class="card-number"> 5536 9177 6289 0777 </div>
+            <p style="font-size: 0.9rem; color: #6b7280; text-align: center;">Получатель: Решаев Ф.П.</p>
+        </div>
+
+        <div class="payment-form">
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">Введите номер карты, с которой производите оплату:</p>
+            <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
+
+            <div class="row">
+                <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5">
+                <input type="text" id="cvv" placeholder="CVV" maxlength="3">
+            </div>
+
+            <button onclick="confirmPayment()" class="btn-submit">
+                ✅ Я оплатил(а) — открыть доступ
+            </button>
+
+            <p style="font-size: 0.8rem; color: #6b7280; text-align: center; margin-top: 0.5rem;">
+                После оплаты нажмите кнопку, чтобы получить доступ к уроку
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Реальные Zoom-ссылки
+    const zoomUrls = {
+        1: "https://us04web.zoom.us/j/12345678901?pwd=DEMO1",
+        2: "https://us04web.zoom.us/j/12345678902?pwd=DEMO2",
+        3: "https://us04web.zoom.us/j/12345678903?pwd=DEMO3"
+    };
+
+    const lessonNames = {
+        1: "🗣️ Разговорный клуб: «Путешествия и культура»",
+        2: "📖 Грамматика таджикского языка: Лёгкий старт",
+        3: "🎯 Русский для начинающих (билингвы)"
+    };
+
+    let currentLessonId = null;
+
+    // Открытие модального окна оплаты
+    function openPayment(lessonId) {
+        currentLessonId = lessonId;
+        document.getElementById('lessonName').textContent = lessonNames[lessonId];
+        document.getElementById('paymentModal').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Закрытие модального окна
+    function closePayment() {
+        document.getElementById('paymentModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Подтверждение оплаты
+    function confirmPayment() {
+        const cardNumber = document.getElementById('cardNumber').value.trim();
+        const expiry = document.getElementById('expiryDate').value.trim();
+        const cvv = document.getElementById('cvv').value.trim();
+
+        // Простая валидация
+        if (!cardNumber || cardNumber.length < 16) {
+            alert('⚠️ Пожалуйста, введите номер карты (16 цифр)');
+            return;
+        }
+
+        if (!expiry || expiry.length < 5) {
+            alert('⚠️ Пожалуйста, введите срок действия (MM/YY)');
+            return;
+        }
+
+        if (!cvv || cvv.length < 3) {
+            alert('⚠️ Пожалуйста, введите CVV код (3 цифры)');
+            return;
+        }
+
+        // Подтверждение оплаты
+        if (confirm('✅ Вы подтверждаете оплату 50 сомони на карту PF?\n\nНомер карты: ' + cardNumber + '\n\nПосле подтверждения доступ к уроку будет открыт.')) {
+            // Открываем доступ к уроку
+            localStorage.setItem(`zoom_access_${currentLessonId}`, 'true');
+            updateLessonUI(currentLessonId);
+            closePayment();
+            alert('🎉 Доступ к уроку открыт! Теперь вы можете войти в Zoom.');
+
+            // Очищаем поля
+            document.getElementById('cardNumber').value = '';
+            document.getElementById('expiryDate').value = '';
+            document.getElementById('cvv').value = '';
+        }
+    }
+
+    // Обновление UI урока
+    function updateLessonUI(lessonId) {
+        const isOpen = localStorage.getItem(`zoom_access_${lessonId}`) === 'true';
+        const statusSpan = document.getElementById(`status${lessonId}`);
+        const zoomLink = document.getElementById(`zoomLink${lessonId}`);
+
+        if (isOpen) {
+            statusSpan.innerHTML = "✅ Доступ открыт!";
+            statusSpan.style.color = "#10b981";
+            zoomLink.classList.remove("locked");
+            zoomLink.style.pointerEvents = "auto";
+            zoomLink.style.opacity = "1";
+            zoomLink.href = zoomUrls[lessonId];
+            zoomLink.innerText = "🎥 Войти в Zoom (активно)";
+        } else {
+            statusSpan.innerHTML = "🔒 Доступ закрыт — требуется оплата";
+            statusSpan.style.color = "#dc2626";
+            zoomLink.classList.add("locked");
+            zoomLink.style.pointerEvents = "none";
+            zoomLink.style.opacity = "0.5";
+            zoomLink.href = "#";
+            zoomLink.innerText = "🚪 Войти в Zoom (недоступно)";
+        }
+    }
+
+    // Загрузка сохранённых доступов при старте
+    for (let i = 1; i <= 3; i++) {
+        updateLessonUI(i);
+    }
+
+    // Закрытие модального окна по клику вне его
+    window.onclick = function(event) {
+        const modal = document.getElementById('paymentModal');
+        if (event.target === modal) {
+            closePayment();
+        }
+    }
+
+    // Форматирование номера карты
+    document.getElementById('cardNumber').addEventListener('input', function(e) {
+        let value = this.value.replace(/\D/g, '');
+        if (value.length > 16) value = value.slice(0, 16);
+        let formatted = '';
+        for (let i = 0; i < value.length; i++) {
+            if (i > 0 && i % 4 === 0) formatted += ' ';
+            formatted += value[i];
+        }
+        this.value = formatted;
+    });
+
+    // Форматирование даты
+    document.getElementById('expiryDate').addEventListener('input', function(e) {
+        let value = this.value.replace(/\D/g, '');
+        if (value.length > 4) value = value.slice(0, 4);
+        if (value.length >= 2) {
+            this.value = value.slice(0, 2) + '/' + value.slice(2);
+        } else {
+            this.value = value;
+        }
+    });
+
+    // Только цифры для CVV
+    document.getElementById('cvv').addEventListener('input', function(e) {
+        this.value = this.value.replace(/\D/g, '').slice(0, 3);
+    });
+</script>
+</body>
+</html>

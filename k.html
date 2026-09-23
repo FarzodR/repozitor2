@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>...</title>
+    <link rel="stylesheet" href="scratch.css">
+</head>
+<body>   <!-- ← весь видимый контент должен быть внутри body -->
+    <div class="site">
+        ...
+    </div>
+</body>
+
+<div class="site">
+
+    <!-- 1. ШАПКА -->
+    <div class="header">
+        🦁 Животные Африки 🐘
+    </div>
+
+    <!-- 2. БЛОК НАВИГАЦИИ -->
+    <div class="nav-block">
+        <a href="#">Главная</a>
+        <a href="#">Саванна</a>
+        <a href="#">Животные</a>
+        <a href="#">Фото</a>
+        <a href="#">Контакты</a>
+    </div>
+
+    <!-- 3. ОСНОВНАЯ ЧАСТЬ: МЕНЮ + КОНТЕНТ -->
+    <div class="main-row">
+
+        <!-- ЛЕВЫЙ БЛОК: МЕНЮ -->
+        <div class="menu">
+            <h3>📖 Меню</h3>
+            <ul>
+                <li><a href="#">🐾 Львы</a></li>
+                <li><a href="#">🦒 Жирафы</a></li>
+                <li><a href="#">🐘 Слоны</a></li>
+                <li><a href="#">🦏 Носороги</a></li>
+                <li><a href="#">🐆 Гепарды</a></li>
+                <li><a href="#">🦓 Зебры</a></li>
+                <li><a href="#">📸 Галерея</a></li>
+            </ul>
+            <div class="menu-bottom">
+                🌍 Африка — колыбель жизни
+            </div>
+        </div>
+
+        <!-- ПРАВЫЙ БЛОК: КОНТЕНТ -->
+        <div class="content">
+            <h1>🌟 Удивительный мир африканской саванны</h1>
+
+            <p><strong>Африка</strong> — дом для самых невероятных животных на планете. Здесь живут <mark class="highlight">«Большая пятёрка»</mark>: лев, леопард, слон, буйвол и носорог. Каждый год миллионы туристов едут в <em>сафари</em>, чтобы увидеть их в естественной среде.</p>
+
+            <!-- картинка (лев) -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg"
+                 alt="Лев в Африке"
+                 class="animal-img"
+                 onerror="this.src='https://via.placeholder.com/600x350?text=Лев'">
+
+            <div class="animal-fact">
+                🦁 <strong>Интересный факт:</strong> Львы спят до 20 часов в сутки, а гепарды разгоняются до 120 км/ч!
+            </div>
+
+            <h2>📊 Таблица африканских рекордов</h2>
+            <table>
+                <caption>🏆 Самые-самые животные Африки</caption>
+                <thead>
+                    <tr><th>Животное</th><th>Характеристика</th><th>Значение</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>🐘 Слон</td><td>Вес</td><td>до 6000 кг</td></tr>
+                    <tr><td>🐆 Гепард</td><td>Скорость</td><td>120 км/ч</td></tr>
+                    <tr><td>🦒 Жираф</td><td>Рост</td><td>до 5,5 метров</td></tr>
+                    <tr><td>🦏 Носорог</td><td>Толщина кожи</td><td>до 2,5 см</td></tr>
+                </tbody>
+            </table>
+
+            <h2>🖼️ Символы Африки</h2>
+            <p>Жирафы — самые высокие животные мира, их сердце весит около 11 кг. Африканские слоны — самые крупные сухопутные млекопитающие. Саванна — это удивительный мир, где природа создала настоящие шедевры эволюции.</p>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Giraffe_Mikumi_National_Park.jpg"
+                 alt="Жираф"
+                 class="animal-img"
+                 onerror="this.src='https://via.placeholder.com/600x350?text=Жираф'">
+
+            <p class="block-info">➡️ <strong>Расположение блоков выполнено по заданию:</strong> Шапка, Блок навигации, слева Меню, справа Контент, внизу Подвал.</p>
+        </div>
+    </div>
+
+    <!-- 4. ПОДВАЛ САЙТА -->
+    <div class="footer">
+        © 2026 Животные Африки | Блочная структура по ГОСТу (рисунок из ТЗ)
+        <br> Все изображения иллюстративные | <a href="#">Политика сайта</a>
+    </div>
+
+</div>
+
+</body>
+</html>
