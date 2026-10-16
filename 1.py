@@ -1,6 +1,6 @@
 
 print(2)
 
-a = 4
-print(a)
+b= 4
+print(b)
     
